@@ -450,8 +450,6 @@ Text Notes 1750 3650 0    50   ~ 0
 Clear jumper \nto disable LED
 Wire Wire Line
 	1450 4150 1450 4100
-Wire Wire Line
-	1450 3800 1450 3750
 $Comp
 L Device:R R1
 U 1 1 60A1F61C
@@ -461,30 +459,6 @@ F 1 "4k7" H 1520 3905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1380 3950 50  0001 C CNN
 F 3 "~" H 1450 3950 50  0001 C CNN
 	1    1450 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 3450 1450 3400
-$Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 60A1F615
-P 1450 3600
-F 0 "JP1" V 1404 3668 50  0000 L CNN
-F 1 "LED" V 1495 3668 50  0000 L CNN
-F 2 "CoreElectronics_Components:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1450 3600 50  0001 C CNN
-F 3 "~" H 1450 3600 50  0001 C CNN
-	1    1450 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60A1F60F
-P 1450 3400
-F 0 "#PWR?" H 1450 3250 50  0001 C CNN
-F 1 "+3V3" H 1465 3573 50  0000 C CNN
-F 2 "" H 1450 3400 50  0001 C CNN
-F 3 "" H 1450 3400 50  0001 C CNN
-	1    1450 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -662,7 +636,7 @@ U 1 1 60DF805D
 P 2750 1900
 F 0 "J3" H 2858 2281 50  0000 C CNN
 F 1 "PROG" H 2858 2190 50  0000 C CNN
-F 2 "CoreElectronics_Components:PiicoDev_ProgrammingHeader_2x03_P1.27mm_Vertical" H 2750 1900 50  0001 C CNN
+F 2 "CoreElectronics_Components:PiicoDev_header_programming_test_1x05_P1.27mm_Vertical" H 2750 1900 50  0001 C CNN
 F 3 "~" H 2750 1900 50  0001 C CNN
 	1    2750 1900
 	1    0    0    -1  
@@ -765,7 +739,7 @@ L Jumper:SolderJumper_2_Open JP3
 U 1 1 60DEE5CD
 P 1650 6200
 F 0 "JP3" H 1800 6250 50  0000 C CNN
-F 1 "ADD2" H 1650 6300 50  0000 C CNN
+F 1 "ADD3" H 1650 6300 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1650 6200 50  0001 C CNN
 F 3 "~" H 1650 6200 50  0001 C CNN
 	1    1650 6200
@@ -798,40 +772,6 @@ Wire Wire Line
 Wire Wire Line
 	2200 5700 2200 5800
 Connection ~ 2200 5800
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 60E2F984
-P 3450 6200
-F 0 "JP4" H 3450 6405 50  0000 C CNN
-F 1 "FACTORY RESET" H 3450 6314 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3450 6200 50  0001 C CNN
-F 3 "~" H 3450 6200 50  0001 C CNN
-	1    3450 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60E3004B
-P 3850 6250
-AR Path="/609C5735/60E3004B" Ref="#PWR?"  Part="1" 
-AR Path="/60E3004B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3850 6000 50  0001 C CNN
-F 1 "GND" V 3855 6122 50  0000 R CNN
-F 2 "" H 3850 6250 50  0001 C CNN
-F 3 "" H 3850 6250 50  0001 C CNN
-	1    3850 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 6250 3850 6200
-Wire Wire Line
-	3850 6200 3600 6200
-Text Label 3150 6200 2    50   ~ 0
-FAC_RST
-Wire Wire Line
-	3150 6200 3300 6200
-Text Label 6750 2650 2    50   ~ 0
-FAC_RST
 Wire Wire Line
 	6750 2650 6850 2650
 $Comp
@@ -839,7 +779,7 @@ L Jumper:SolderJumper_2_Open JP5
 U 1 1 60E668FB
 P 1650 6350
 F 0 "JP5" H 1800 6400 50  0000 C CNN
-F 1 "ADD3" H 1650 6250 50  0000 C CNN
+F 1 "ADD4" H 1650 6250 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1650 6350 50  0001 C CNN
 F 3 "~" H 1650 6350 50  0001 C CNN
 	1    1650 6350
@@ -852,12 +792,12 @@ Wire Wire Line
 	2200 6350 2200 6500
 NoConn ~ 8200 4650
 Text Label 1250 5700 2    50   ~ 0
-ADD2
-Text Label 1250 5800 2    50   ~ 0
 ADD1
-Text Label 1250 6200 2    50   ~ 0
-ADD4
+Text Label 1250 5800 2    50   ~ 0
+ADD2
 Text Label 1250 6350 2    50   ~ 0
+ADD4
+Text Label 1250 6200 2    50   ~ 0
 ADD3
 Wire Wire Line
 	1500 6350 1250 6350
@@ -878,12 +818,12 @@ Wire Notes Line
 Text Notes 1050 5250 0    50   ~ 0
 Address Selection
 Text Label 8600 2250 0    50   ~ 0
-ADD2
-Text Label 8600 2950 0    50   ~ 0
 ADD1
-Text Label 8600 2050 0    50   ~ 0
-ADD4
+Text Label 8600 2950 0    50   ~ 0
+ADD2
 Text Label 8600 2650 0    50   ~ 0
+ADD4
+Text Label 8600 2050 0    50   ~ 0
 ADD3
 Wire Wire Line
 	8050 2250 8600 2250
@@ -904,4 +844,10 @@ F 3 "~" H 1650 5800 50  0001 C CNN
 	1    1650 5800
 	-1   0    0    -1  
 $EndComp
+Text Label 1450 3700 2    50   ~ 0
+PWR_LED
+Wire Wire Line
+	1450 3700 1450 3800
+Text Label 6750 2650 2    50   ~ 0
+PWR_LED
 $EndSCHEMATC
