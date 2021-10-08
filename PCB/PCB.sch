@@ -791,9 +791,9 @@ Connection ~ 2200 6350
 Wire Wire Line
 	2200 6350 2200 6500
 NoConn ~ 8200 4650
-Text Label 1250 5700 2    50   ~ 0
-ADD1
 Text Label 1250 5800 2    50   ~ 0
+ADD1
+Text Label 1250 5700 2    50   ~ 0
 ADD2
 Text Label 1250 6350 2    50   ~ 0
 ADD4
@@ -842,7 +842,7 @@ F 1 "ADDR" H 1650 6076 50  0000 C CNN
 F 2 "CoreElectronics_Components:SW_DIP_SPSTx02_Slide_DSHP" H 1650 5800 50  0001 C CNN
 F 3 "~" H 1650 5800 50  0001 C CNN
 	1    1650 5800
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Text Label 1450 3700 2    50   ~ 0
 PWR_LED
