@@ -8,9 +8,9 @@ Title "PiicoDev 3x RGB LED Module"
 Date "2022-03-21"
 Rev "v10"
 Comp "Core Electronics"
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Comment1 "Designed at Core Electronics by Michael Ruppe"
+Comment2 "PiicoDev and the PiicoDev logo are trademarks of Core Electronics Pty Ltd"
+Comment3 "License: CCASAv4.0 http://creativecommons.org/licenses/by-sa/4.0"
 Comment4 ""
 $EndDescr
 $Comp
